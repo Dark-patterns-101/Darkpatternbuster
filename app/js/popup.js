@@ -16,6 +16,10 @@ window.onload = function () {
   };
 };
 
+//  document.getElementById("link").onclick =  function() {
+//         window.location.href = "https://www.youtube.com/watch?v=dSvvoRvb7ng";
+//     };
+
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.message === "update_current_count") {
     document.getElementsByClassName("number")[0].textContent = request.count;
